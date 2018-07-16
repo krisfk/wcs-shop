@@ -1,0 +1,8 @@
+https://testapi.meghk.com/wcs-shop/
+
+https://testapi.meghk.com/hksm_web_sales/api_test/test
+https://testapi.meghk.com/wcs-shop/init.php?mbr_code=99-0008899
+
+https://testapi.meghk.com/wcs-shop/init.php?mbr_code=04-0034752
+
+https://testapi.meghk.com/wcs-shop/static.html

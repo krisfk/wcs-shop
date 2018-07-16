@@ -1,0 +1,624 @@
+/* CSS Document */
+@import "reset";
+
+
+$main-bg: #f5f6f5;
+$selection-bg: #fff8f0;
+$text-color-1: #484b4e;
+$text-color-2:#6c4514;
+$text-color-3:#282828;
+$text-color-4:#5e3d12;
+
+$hksm-color:#f59d2d;
+$border-radius-1:6px;
+$border-radius-2:6px;
+
+
+
+$mobile-logo-height:33px;
+$mobile-font-size-title:15px;
+ 
+$mobile-font-size-1:14px;
+$desktop-step-bar-height:45px;
+
+
+
+$desktop-logo-height:60px;
+$desktop-font-size-1:16px;
+$desktop-font-size-2:14px;
+$desktop-step-bar-height:45px;
+
+body{
+background: $main-bg;	
+font-family:"微軟正黑體", "arial";
+padding: 0 0 50px 0;
+
+} 
+
+
+.loading-layer{
+	display: none;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url(../img/loading.gif) no-repeat center center rgba(255, 255, 255, 0.81);
+    background-size: 35px;
+}
+
+
+.thankyou-icon{
+    height: 117px;
+    margin: 20px auto  0 auto;
+    display: block;}
+.strip-icon{
+    height: 32px;
+    margin: 30px auto 0 auto;
+    display: inherit;}
+.clock-icon{
+		height: 26px;
+		   position: relative;
+		top: 7px;
+		left: -5px;
+	}
+
+.card-icon{
+	height: 25px;
+}
+
+.index .h2-title,
+.wcs-shop .h2-title
+{
+		font-size: 18px;
+		font-weight: normal;
+		color: $text-color-1;
+		text-align: center;
+		margin: 15px 0 18px 0;
+	}	
+
+.cart .h2-title{
+		font-size: 18px;
+		font-weight: normal;
+		color: $text-color-1;
+		text-align: center;
+		margin: 15px 0 18px 0;
+	}	
+
+
+.complete .h2-title{
+		font-size: 24px;
+		font-weight: bold;
+		color: $text-color-1;
+		text-align: center;
+		margin: 20px 0 18px 0;
+	}	
+
+
+
+
+
+
+.container
+{
+	.middle{
+		display: block;
+		width: 1000px;
+		margin: 0 auto;
+	}
+	
+	
+	
+	.middle{	
+		.veh-type-btn-div{
+			display: block;
+			width: 85%;
+			background: #fff;
+			margin: 34px auto 0 auto;
+			box-shadow: 2px 1px 1px rgba(150, 150, 150, 0.25);
+
+			border-radius: $border-radius-1;
+			
+		}
+		
+		.veh-type-btn-div
+		{
+			li {
+			    display: table-cell;
+				background: url(../img/grey-line.png) 100% center no-repeat;
+				background-size: 1px 70px/* 1px 43px*/;
+			}
+
+			
+			
+			li.last{
+				background: none;
+			}
+			
+			.veh-type-btn{
+				     display: inherit;
+			text-align: center;
+			vertical-align: bottom;
+			width: 333px;
+			font-size: 16px;
+			border-radius: $border-radius-1;
+			padding: 80px 0 20px 0;/*38px 0 10px 0*/;
+				text-decoration: none;
+				color: $text-color-1;
+				transition: all 0.8s ease;
+			}
+			
+			.veh-type-btn:hover{
+				opacity: 0.8;
+			}
+			
+			.veh-type-btn.active:hover{
+				opacity: 1;
+			}
+			
+			.veh-type-btn.active{
+				color: $hksm-color;
+			}
+			
+			.veh-type-btn.pc{
+				background: url(../img/veh-type-btn-pc.png) no-repeat center 28%;
+/*				background-size: 55px auto;
+*/			}
+			
+			.veh-type-btn.pc.active{
+				background: url(../img/veh-type-btn-pc-active.png) no-repeat center 28%;
+/*				background-size: 55px auto;
+*/			}
+			 
+			.veh-type-btn.lg{
+				background: url(../img/veh-type-btn-lgv.png) no-repeat center 28%;
+/*				background-size: 53px auto;
+*/ 
+			}
+			.veh-type-btn.lg.active{
+				background: url(../img/veh-type-btn-lgv-active.png) no-repeat center 28%;
+/*				background-size: 53px auto;
+*/			}
+			
+
+			.veh-type-btn.mc{
+				background: url(../img/veh-type-btn-mc.png) no-repeat center 28%;	
+/*				background-size: 30px auto;
+*/				
+			}
+			
+			.veh-type-btn.mc.active{
+				background: url(../img/veh-type-btn-mc-active.png) no-repeat center 28%;	
+/*				background-size: 30px auto;
+*/				
+			}
+			
+			
+		}
+		
+		.bottom-btns-ul{
+				display: block;
+				margin: 22px auto 0 auto;
+				text-align: center;
+		}
+		
+		.bottom-btns-ul{
+			li{
+				display: inline-block;
+				border-radius: $border-radius-2;
+				overflow: hidden;
+				margin: 0 10px;
+			}
+			a{
+				width: 120px;
+				height: 40px;
+				display: block;
+				background: $hksm-color;
+				color: white;
+				line-height: 40px;
+				text-decoration: none;
+				font-weight: normal;
+				transition: all 0.5 ease;
+				font-size: 16px;
+				
+			}
+			
+			
+			button{
+				width: 120px;
+				height: 40px;
+				display: block;
+				background: #f59d2d;
+				color: white;
+				line-height: 40px;
+				text-decoration: none;
+				font-weight: normal;
+				font-size: 16px;
+				border: none;
+				cursor: pointer;
+				transition: all 0.2s ease;
+
+				
+
+			}
+			
+			a:hover,button:hover{
+				opacity: 0.8;
+				transition: all 0.2s ease;
+
+				
+			}
+			
+			li.back-to-home-btn-li{
+				width: 80%;
+				max-width: 400px;
+			}
+			a.back-to-home-btn{
+				width: 100%;
+			}
+		}
+		
+		
+	}
+	
+	.logo{
+	display: inline-block;
+/*		margin: 13px 0 0 0;
+*/	
+	margin: 13px 0 0 75px;
+	}
+     
+	.logo img
+	{
+			height: $desktop-logo-height;
+			width: auto;
+	}
+	
+	.step-bar{
+		
+		height: 45px/*28px*/;
+		background: white;
+		margin: 17px 0 0 0;
+		display: block;
+		text-align: center;
+		box-shadow: 2px 1px 1px rgba(150, 150, 150, 0.25);
+
+	}
+	.step-flow{
+		display: inline-block;
+		height: 28px;
+		
+	}
+	
+	
+	.step-flow
+	{
+		li{
+				display: inline-block;
+		height: 45px/*28px*/;
+		line-height: 45px/*30px*/;
+		padding: 0 40px 0 0 ;/* 0 19px 0 0*/;
+		font-size: 18px;
+/*		font-weight: bold;
+*/		background: url(../img/flow-arrow.png) no-repeat 89% 50%/*100% 50%*/;
+		background-size: auto 15px/*9px*/;
+			margin: 0 8px 0 0 ;
+		} 
+
+		li.active{ 
+			color: $hksm-color;
+			background: url(../img/flow-arrow-active.png) no-repeat 89% 50%/* 100% 50%*/;
+			background-size: auto 15px/*9px*/;
+
+
+		}
+
+		li.last{ 
+			padding: 0;
+			background: none;
+			margin: 0;
+		}
+	}
+	
+	
+	
+	
+	.course-selection-div, 
+	.pay-div
+	{
+		position: relative;
+		display: none;
+		width: 85%;
+		background: #fff;
+		margin: 0 auto;
+		border-radius: $border-radius-1;
+		box-shadow: 2px 1px 1px rgba(150, 150, 150, 0.25);
+		padding: 20px 0 20px 0;
+
+
+	}
+	
+	.pay-div{
+		.pay-div-middle{
+			    width: 95%;
+    margin: 0 auto;
+		}
+		
+		.strip-txt{
+			font-size: $desktop-font-size-2;
+			color: $text-color-4;
+			text-align: center;
+			font-weight: bold;
+			margin: 12px 0 0 0;
+			line-height: normal;
+			
+		}
+		
+		
+	/**
+ * The CSS shown here will not be introduced in the Quickstart guide, but shows
+ * how you can use CSS to style your Element's container.
+ */
+	
+
+.StripeElement {
+/*    height: 40px;
+*/    padding: 10px 12px;
+    border-radius: 4px;
+    border: 1px solid $hksm-color;
+    /* box-shadow: 0 1px 3px 0 #e6ebf1; */
+    -webkit-transition: box-shadow 150ms ease;
+    transition: box-shadow 150ms ease;
+    background: $selection-bg;
+    border-radius: $border-radius-2;
+	margin: 10px 0 0 0;
+	font-size: 12px;
+		}
+		
+.fill-info{
+	margin: 6px 0 0 0;
+}
+		.StripeElement--focus {
+/*			box-shadow: 0 1px 3px 0 #cfd7df;
+*/		}
+		
+		.StripeElement--invalid {
+			border-color: #fa755a;
+		}
+		
+		.StripeElement--webkit-autofill {
+			background-color: #fefde5 !important;
+		}
+
+.field-div{
+	margin: 20px 0 0 0;
+	font-size: 12px;
+	
+}
+
+.field-div label span{
+	font-size: $desktop-font-size-1;
+}
+		
+.field-div.field-div-2{
+	width: 11%;
+	margin: 20px 10px 0 0 ;
+	display: inline-block;
+	min-width: 90px;
+	
+}
+		
+		#card-number-element{
+			width: 55%;
+			max-width: 500px;
+		}
+
+.outcome{
+	margin: 20px 0 0 0;
+	font-size: $desktop-font-size-1;
+	color:#fa755a;
+}
+		
+	}
+	
+	.course-selection-div {
+		ul.course-selection-ul{
+			   display: block;
+			width: 95%;
+			margin: 0 auto;
+			border: 1px solid $hksm-color;
+			border-radius: $border-radius-2;
+
+
+		}
+		
+		li.course-selection-li{
+			display: block;
+			border-bottom: 1px solid $hksm-color;
+		
+	
+		}
+		li.course-selection-li.last{
+			border:none;
+		}
+		
+		a{
+			display: block;
+			height: 50px/*35px*/;
+			display: block;
+			width: 100%;
+			line-height: 50px/*35px*/;
+			text-indent:40px;
+			font-size: 16px/*12px*/;
+			text-decoration: none;
+			font-weight: bold;
+			border-radius: $border-radius-2;
+		    background: url(../img/bullet.png) no-repeat 15px center $selection-bg;
+			
+			background-size: 12px 12px;
+		
+			
+		}
+		
+		a.active{
+			 background: url(../img/bullet-active.png) no-repeat 15px center $selection-bg;
+			
+			background-size: 12px 12px;
+		
+		}
+		
+		.course-name{
+			color:$text-color-2;
+		}
+		
+		.course-price{
+			color:$text-color-3;
+			margin: 0 0 0 10px;
+		}
+		
+		
+		
+		
+	}
+	
+	
+	.cart-content,
+	.complete-content{
+		    display: block;
+    width: 85%;
+    background: #fff;
+    margin: 15px auto 0 auto;
+    border-radius: 6px;
+    box-shadow: 2px 1px 1px rgba(150, 150, 150, 0.25);
+    padding: 5px 0 20px 0;
+	}
+	
+		.cart-content,
+	.complete-content{
+		.transaction-code-div{
+			text-align: center;
+			margin: 19px 0 0 0;
+			font-size: $desktop-font-size-1
+		}
+		
+		.complete-txt{
+			    text-align: center;
+    margin: 20px 0 20px 0;
+    font-size: 22px;
+    font-weight: bold;
+    color: #f59d2d;
+		}
+		
+		.complete-bought{
+			margin: 0 auto;
+		}
+		
+		.complete-bought .course-type{
+			font-size: $desktop-font-size-1;
+		}
+		
+		.complete-bought td{
+			padding: 0 0 10px 0;
+			font-size: $desktop-font-size-1;
+		}
+		
+		.complete-bought .unit-row{
+			padding: 0 0 15px 0;
+			
+		}
+	}
+	
+	
+	
+	.total-price{
+		   display: block;
+		width: 85%;
+		margin: 15px auto 0 auto;
+		padding: 5px 0 20px 0;
+		text-align: right;
+	}
+	.total-price .txt{
+		    width: 95%;
+    margin: 0 auto;
+		font-size: $desktop-font-size-1;
+		font-weight: bold;
+	
+	}
+	
+	
+	.cart-content{
+		
+		
+		table{
+			width: 95%;
+			margin: 0 auto;
+		}
+		
+		table{
+				.col-l{
+
+					.course-type{
+								display: block;
+						margin: 0 0 20px 5px;
+						
+						font-size: $desktop-font-size-1;
+					}la
+					.course-title-info{
+					
+					margin: 15px 0 0 0;
+						font-size: $desktop-font-size-1;
+						line-height: normal;
+								display: block;}
+					
+					
+					.course-title-info br{
+						display: none;
+					}
+
+					.course-place{
+					margin: 10px 0 0 0;
+						
+						font-size: $desktop-font-size-1;
+								display: block;
+					}
+
+				}
+
+				.col-r{
+					text-align:right;
+					vertical-align: middle;
+				}
+		}
+		
+		.item-cost{
+			padding: 20px 0 20px 0;
+		}
+	}
+	
+	
+	
+}
+
+.container{
+	display: block;
+	width: 100%;
+	margin: 0 auto;
+}
+
+
+.mbr-code-div{
+	font-size:$desktop-font-size-1;
+	color: $text-color-1;
+/*	margin: 10px 0 0 0;
+*/
+margin: 10px 0 0 75px;
+}
+
+.msg{
+	display:  none;
+}
+@import "dropkick";
+
+
+@import "mobile";
+
